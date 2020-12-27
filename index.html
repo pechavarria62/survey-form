@@ -1,1 +1,106 @@
-<h1 id="title"> A survey for Dominican Republic visitors</h1>
+<!DOCTYPE html>
+<html>
+    <head>
+        <style>
+                  
+            html {
+                background: url('image/idoloveit.jpg') no-repeat center center fixed;
+                -webkit-background-size: cover;
+                -moz-background-size:cover;
+                -o-bacground-size:cover;
+                background-size:cover;
+
+            }
+            html{
+                
+                text-align: center;
+            }
+
+            body{
+                font-family: sans-serif;
+                font-size: 18px;
+            }
+            img{
+                float: center;
+                padding: 5px;
+                width: 500px;
+            }
+            img {
+                box-shadow: 0 10px 20px rgba(19, 15, 15, 0.23), 0 10px 10px rgba(15, 1, 1, 0.23);
+            }
+            .responsive-img {
+                max-width: 100%;
+                height: auto;
+
+            }
+      
+        </style>      
+    </head>
+    <body >
+        
+         <h1 id="title"> A survey for Dominican Republic visitors</h1>
+         <img src="image/IMG_3367.jpeg">
+        <p id="description">
+            This is a survey where you can tell us about your experience in the Dominican Republic.
+        </p>
+         <form id="survey-form">
+                <label id="name-label">Name:</label>
+                <input type="test" name="name" id="name" required placeholder="Firs & Last" id="dropdown"></input><br>
+                <label id="email-label">Email:</label>
+                <input type="email" name="email" id="email" required placeholder="Email"></input><br>
+                <input type="radio" id="male" name="gender" value="male">
+                <label for="male">Male</label><br>
+                <input type="radio" id="female" name="gender" value="female">
+                <label for="female">Female</label><br>
+                <input type="radio" id="other" name="gender" value="other">
+                <label for="other">Other</label><br>
+                <br>
+                <P>What was the reazon of your visit?</P>
+                <label for="Leisure">Leisure</label>
+                <input type="checkbox" id="leasure" name="leasure" value="leasure"><br>
+                <label for="new experiences">New experiences</label>
+                <input type="checkbox" id="new experiences" name="new experiences" value="new experiences"><br>
+                <label for="Food">Food</label>
+                <input type="checkbox" id="food" name="food" value="food"><br>
+                <label for="bonding">Bonding</label>
+                <input type="checkbox" id="bonding" name="bonding" value="bonding"><br>
+                <label for="other">Other</label>
+                <input type="checkbox" id="other" name="other" value="other"><br>
+                <p>1.what native alcoholic drink you liked the moust</p>
+               <label for="drings">Choose one:
+                    <select id="dropdown" name="drinks">
+                        <option value="mamajuana">Mamajuana</option>
+                        <option value="brugal">Brugal</option>
+                        <option value="Presidente">Cervesa Presidente</option>
+                        <option value="barcelo">Barcelo</option><br>
+                    </select>           
+               </label>  <br>
+                <label id="other">Other:</label>    
+                <input type="test" name="name" id="name"  placeholder="Other" id="dropdown"></input>    
+             <p>2. What Dominican street food did you try?</p>
+             <label for="food">Choose one:
+                <select id="dropdown" name="food">
+                    <option value="empanadas">Empanadas</option>
+                    <option value="Quipes">Quipes</option>
+                    <option value="tapao">Tapao</option>
+                    <option value="frituras">Frituras</option>
+                </select>           
+             </label><br>
+             <label id="other">Other:</label>    
+             <input type="test" name="name" id="name"  placeholder="Other" id="dropdown"></input>   
+               <footer>
+                    <p>From 0 to 10 much did you like Dominican Republic?</p>  
+                    <label id="number-label">Number:</label>
+                    <input type="number" name="number" id="number" min="0" max="10" required placeholder="#"></input><br>
+                    <br>
+                    <textarea placeholder="Aditional Comments"></textarea><br>
+                    <input type="submit" id="submit">
+                </footer> 
+                   
+            </form>
+        
+       <script type="text/javascript" src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js">
+      </script>
+    
+    </body>
+</html>
